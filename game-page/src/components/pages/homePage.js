@@ -6,9 +6,9 @@ class HomePage extends Component {
     render() {
         return (
             <div className="container-fluid">
-<h1> Home Page Content </h1>
-<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-            </div>
+                <h1> Home Page Content </h1>
+                <p> This is my App built in React. It features multiple games on one webpage without reloading the page to swap between them
+    as well as profiles using LocalStorage to save game statistics between sessions.</p>            </div>
         );
     }
 }

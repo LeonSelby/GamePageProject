@@ -14,13 +14,16 @@ class Header extends Component {
                 <nav>
                     <ul>
                         <li className="first">
-                            <Link to="/">Home</Link>
+                            <Link to="/hangMan">Hangman</Link>
                         </li>
                         <li>
-                            <Link to="/productPage">Products</Link>
+                            <Link to="/connectFour">ConnectFour</Link>
+                        </li>
+                        <li>
+                            <Link to="/"> Blackjack</Link>
                         </li>
                         <li className="last">
-                            <Link to="/"> Blackjack</Link>
+                            <Link to="/"> BattleShips</Link>
                         </li>
                     </ul>
                 </nav>

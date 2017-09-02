@@ -1,42 +1,3 @@
-
-import React, { Component } from 'react';
-
-
-
-class HangMan extends Component {
-    render() {
-        return (
-            <div className="container-fluid">
-                {/* <script async="true" type="text/javascript" src="hangmansource.js">
-                    </script> */}
-                <h1> Hangman Guess the word!</h1>
-                <div id="diffDiv" > </div>
-                <p id="diffPara" > Difficulty: </p>
-                <form id="diffForm">
-{/* 
-                    <input id="EasyButton" type="button" value="Easy" size="10" onClick={setToEasyHangman()}></input>
-                    <input id="NormalButton" type="button" value="Normal" size="10" onClick={setToNormalHangman()}></input>
-                    <input id="HardButton" type="button" value="Hard" size="10" onClick={setToHardHangman()}></input> */}
-
-                </form>
-                <form name="form" id="formID">
-
-                    <input name="entryBox" id="entryBoxID" type="text" size="10" maxLength="1"
-                        onKeyPress="if (event.keyCode == 13) {guess(entryBoxID.value); return false}"></input>
-                    <input name="button" id="guessButton" type="button" value="Guess!" onClick={guess(entryBoxID.value.toLowerCase())}></input>
-
-                    <p id="abovePic"></p>
-                    <img id="picture" src="./pics/hangman/0.jpg" width="35%" alt="HangmanImage" />
-
-                    <p id="belowPic">Lives left: </p>
-
-                    <p id="guessedWrong">Wrong Guesses: </p>
-                </form>
-            </div>
-        );
-    }
-}
-
 const hangmanImage = document.getElementById('hangmanPicture')
 const paraAbove = document.getElementById('abovePic')
 const hangmanLivesSection = document.getElementById('belowPic');
@@ -81,7 +42,7 @@ function setToHardHangman() {
 }
 
 function isLetter(a) {
-    return a.toLowerCase() !== a.toUpperCase();
+    return a.toLowerCase() != a.toUpperCase();
 }
 
 function genWordArray(input) {
@@ -133,7 +94,7 @@ function reset() {
 }
 
 function checkVictory() {
-    let temp = hangmanCorrectArray.length === hangmanGuessArray.length
+    let temp = hangmanCorrectArray.length == hangmanGuessArray.length
         && hangmanCorrectArray.every((v, i) => v === hangmanGuessArray[i]);
 
     if (temp === true && hangmanLives > 0) {
@@ -213,6 +174,3 @@ function updatehangmanImage() {
         hangmanImage.src = sourceHangmanPics + 7 + ".jpg";
     }
 }
-
-
-export default HangMan;
