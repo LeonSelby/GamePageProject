@@ -1,0 +1,39 @@
+@mixin translateY($e){
+    -webkit-transform: translateY(($e));
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e){
+    -webkit-transition:$e;
+    -moz-transition:$e;
+    transition:$e;
+}
+
+
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: darkgray;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+    
+    &:hover{
+        @include transition(.4s ease-in-out);
+        color: lightblue;
+    }
+}
+
+.container-fluid{
+    line-height: 24px;
+}
+

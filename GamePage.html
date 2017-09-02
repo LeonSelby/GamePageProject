@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 20%;
+        }
+
+        .center {
+            align-content: center;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 0px black;
+            padding: 0px;
+        }
+
+        tr {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table style="width:90%; margin-right:5%; margin-left:5%; margin-top:20%" id="UPPERTABLE">
+        <tr>
+            <td style="width:20%;">
+                <h2 class="center" id="GAMEH1"> GAME</h1>
+            </td>
+            <td style="width:60%">
+                <h1 class="center" id="GAMETITLEH1"> GAMETITLE</h1>
+            </td>
+            <td style="width:20%">
+                <h2 class="center" id="PROFILEH1"> PROFILE</h1>
+            </td>
+        </tr>
+    </table>
+    <table id="GAMEHOLDER" style="width:100%; height:100%; width:90%; margin-right:5%; margin-left:5%;">
+        <tr>
+            <td>
+                <table id="HANGMAN" style="width:100%; height:100%;">
+                    <tr>
+                        <td id="leftHangman">
+                                <h3 align="center"> Test left</h3>   
+                            </td>
+                        <td id="rightHangman" style="padding:5%">
+                                <img id="hangmanPicture" style="width:100%;" src="pics/hangman/0.jpg">
+                                
+                            <h3 align="center"> Test right</h3>
+                        </td>
+                    </tr>
+                    <tr id="DeclarationRow" style="height:20%">
+                        <td style="width:100%">
+                                <h2 id="winSection" align="center">Win DeclarationRow</h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="Hangman.js"></script>
+</body>
+
+</html>
